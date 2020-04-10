@@ -1,6 +1,6 @@
-VERSION=8.1
-FILENAME=v$(VERSION).tar.gz
-PACKAGE=https://github.com/xcp-ng/xe-guest-utilities/archive/XCP-ng-$(FILENAME)
+VERSION="8.1"
+FILENAME="XCP-ng-v${VERSION}.tar.gz"
+PACKAGE="https://github.com/xcp-ng/xe-guest-utilities/archive/${FILENAME}"
 
 IMAGE=nezter/rancher-xcp-xe-guest-utils
 

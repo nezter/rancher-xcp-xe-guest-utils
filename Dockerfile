@@ -1,6 +1,7 @@
 FROM iron/go:latest
-MAINTAINER Mark Riedesel <mark@klowner.com>
+MAINTAINER Nez <nez@vectroninc.com>
 WORKDIR /
 COPY dist /
-COPY assets/entrypoint.sh /
-CMD "/entrypoint.sh"
+COPY ./assets/entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+CMD ["/bin/sh" "-c" "\"/entrypoint.sh\""]
