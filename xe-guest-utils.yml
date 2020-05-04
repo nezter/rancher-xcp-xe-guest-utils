@@ -1,5 +1,5 @@
 xe-guest-utils:
-  image: nezter/rancher-xcp-xe-guest-utils:8.1
+  image: nezter/rancher-xcp-xe-guest-utils:latest
   privileged: true
   labels:
     - io.rancher.os.scope=system

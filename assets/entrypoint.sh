@@ -4,8 +4,7 @@ XE_LINUX_DISTRIBUTION_CACHE=/var/cache/xe-linux-distribution
 XE_DAEMON=/usr/sbin/xe-daemon
 
 # copy udev rules to host (doesn't seem to work currently)
-rule=z10_xen-vcpu-hotplug.rules
-cp /etc/udev/rules.d/${rule} /host/etc/udev/rules.d/${rule}
+cp /etc/udev/rules.d/z10_xen-vcpu-hotplug.rules /host/etc/udev/rules.d/z10_xen-vcpu-hotplug.rules
 
 # detect OS type
 ${XE_LINUX_DISTRIBUTION} ${XE_LINUX_DISTRIBUTION_CACHE}
