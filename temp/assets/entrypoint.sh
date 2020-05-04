@@ -17,4 +17,4 @@ if [[ ! -e /proc/xen/xenbus ]]; then
 fi
 
 # start the daemon
-exec ${XE_DAEMON}
+#exec ${XE_DAEMON}
